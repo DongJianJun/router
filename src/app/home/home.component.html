@@ -1,0 +1,13 @@
+<p>用户名 {{user.userName}}</p>
+<p>密码： {{user.password}}</p>
+<input type="text" [(value)]="greeting"/>
+{{greeting}}
+{{answer}}
+<p>送货日期{{busDate | date: 'yyyy-MM-dd'}}</p>
+<div [class]="divClass">
+  快递单
+</div>
+<app-order [greeting]="greeting" (answerEvent)="answerHandler($event)"></app-order>
+
+
+
